@@ -1,0 +1,143 @@
+.clock::before{
+    content: "\f017";
+    font-family: FontAwesome;
+}
+
+.img-overlayalt {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem
+}
+.slider {
+    background-color: rgba(0, 0, 0, 0.63) !important;
+}
+    .slider:hover {
+        background-color: rgba(0, 0, 0, 0.63);
+        transition : 0.5s all linear;
+    }
+
+    @media (min-width:1100px) {
+        .login {
+        display: grid;
+        grid-template: 190px 190px 190px 190px / 1fr 1fr 1fr 1fr;
+        grid-template-areas: "BuyukResim BuyukResim buton1 buton2"
+                             "BuyukResim BuyukResim buton3 buton4"
+    }
+
+
+
+.BuyukResim {
+
+    background-color: red;
+    grid-area: BuyukResim;
+
+}
+
+.buton1 {
+    background-color: forestgreen;
+    grid-area: buton1;
+
+}
+
+.buton2 {
+    background-color: gold;
+    grid-area: buton2;
+
+}
+
+.buton3 {
+    
+    grid-area: buton3;
+
+
+}
+.buton4{
+
+    background-color:pink;
+    grid-area: buton4;
+}
+}
+
+@media (min-width:678px) and (max-width:1100px) {
+
+    .login {
+        display: grid;
+        grid-template: 390px 190px 190px 190px / 1fr 1fr 1fr 1fr;
+        grid-template-areas: "BuyukResim BuyukResim BuyukResim BuyukResim" 
+            "buton1 buton1 buton2 buton2"
+            "buton3 buton3 buton4 buton4"
+    }
+
+
+    .BuyukResim {
+        background-color: red;
+        grid-area: BuyukResim;
+    }
+
+    .buton1 {
+        background-color: forestgreen;
+        grid-area: buton1;
+    }
+
+    .buton2 {
+        background-color: gold;
+        grid-area: buton2;
+    }
+
+    .buton3 {
+        grid-area: buton3;
+    }
+
+    .buton4 {
+        background-color: pink;
+        grid-area: buton4;
+    }
+}
+
+@media (max-width:678px) {
+
+    .login {
+        display: grid;
+        grid-template: 250px 250px 250px 250px 250px  / 1fr;
+        grid-gap: 15px;
+        grid-template-areas:
+            "BuyukResim"
+            "buton1"
+            "buton2"
+            "buton3"
+            "buton4"
+           
+    }
+    
+    .BuyukResim {
+    
+
+        grid-area: BuyukResim;
+    
+    }
+    
+    .buton1 {
+        background-color: forestgreen;
+        grid-area: buton1;
+    
+    }
+    
+    .buton2 {
+        grid-area: buton2;
+    
+    }
+    
+    .buton3 {
+        grid-area: buton3;
+    
+    
+    }
+    .buton4{
+    
+        background-color:pink;
+        grid-area: buton4;
+    }
+    }

@@ -1,0 +1,34 @@
+﻿@model News
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-12 col-md-12 mt-5">
+           
+            <h1>@Model.NewsTitle</h1>
+        </div>
+        <div class="col-12 col-md-9 mt-3"><img src="~/img/@Model.Image" style="width: 100%;" alt=""></div>
+        <div class="col-md-3 mt-3">
+            <div class="card" style="width: 18rem;">
+                <img src="~/img/x.jpg" class="card-img-top" alt="...">
+                <div class="card-body  text-center">
+                    <p class="card-text"> <h3> Gürhan Arslan</h3> <br> <a href="#">LinkedIn</a> <br> <a href="#">gitHub</a> <br> <a href="#">Twitter</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-5 ">
+            <div class="clock"><small class="mx-2 text-muted">@Model.NewsTime</small> <strong>/</strong> <small>@Model.NewsAuthor</small></div>
+            <h2>@Model.NewsDescription</h2>
+        </div>
+        <div class="col-12 mt-5">
+            <p>
+               @Model.Body
+            </p>
+        </div>
+
+    </div>
+
+</div>

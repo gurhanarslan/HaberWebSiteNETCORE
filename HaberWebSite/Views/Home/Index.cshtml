@@ -1,0 +1,75 @@
+﻿@model IEnumerable<News>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@await Component.InvokeAsync("Slider")
+
+
+
+<div class="container-fluid " id="ability">
+
+    <div class="row">
+
+            <div class="GuncelHaberler container-fluid ">
+                <span class="header h3 bg-dark text-white px-4 pt-2">Güncel Haberler</span>
+                <div class="border-bottom" style="border-bottom: 4px solid #343a40 !important;"></div>
+                <div class="row mt-4">
+
+                    @foreach (var item in Model)
+                    {
+                    <a asp-action="Details" asp-controller="Home" asp-route-title="@item.NewsTitle">
+                        
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="~/img/@item.Image" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            @if (item.CategoryName == "Kültür-Sanat")
+                                            {
+                                                <a asp-action="KulturSanat" class="nav-link" style="color:#6c757d" asp-controller="Home"><span class="badge badge-warning">@item.CategoryName</span></a>
+                                            }
+                                            else if (item.CategoryName == "Tasarım-İnovasyon")
+                                            {
+                                                <a asp-action="TasarimInovasyon" class="nav-link" style="color:#6c757d" asp-controller="Home"><span class="badge badge-danger">@item.CategoryName</span></a>
+                                            }
+                                            else if (item.CategoryName == "Spor")
+                                            {
+                                                <a asp-action="Spor" class="nav-link" style="color:#6c757d" asp-controller="Home"><span class="badge badge-success">@item.CategoryName</span></a>
+                                            }
+                                            else
+                                            {
+                                                <a asp-action="Teknoloji" class="nav-link" style="color:#6c757d" asp-controller="Home"><span class="badge badge-primary">@item.CategoryName</span></a>
+
+                                            }
+
+
+                                        </small>
+                                    </p>
+                                    <p class="text-center">
+                                        <strong class="card-text ">
+                                            @item.NewsTitle
+                                        </strong>
+                                    </p>
+                                   
+
+                                    <p class="card-text">
+                                        @item.NewsDescription
+                                    </p>
+                                    <p class="card-text clock"><small class="text-muted mx-2">@item.NewsTime</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a> }
+                </div>
+            </div>
+
+       
+        <hr />
+    </div>
+</div>
+
+@await  Component.InvokeAsync("List")

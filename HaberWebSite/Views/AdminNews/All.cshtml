@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "All";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 ">
+            <a asp-action="Create" class="slider">
+                <div class="card bg-dark text-white  mt-3">
+                    <img src="~/img/5c3bdea0349c9.image.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title text-white bg-danger">CREATE</h5>
+                        <p class="card-text text-white bg-warning">Yeni Haber Ekle</p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 ">
+            <a asp-action="Index" asp-controller="Home">
+                <div class="card bg-dark text-white mt-3">
+                    <img src="~/img/5c3bdea0349c9.image.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title text-white bg-danger">Haberler Ana Sayfa</h5>
+                        <p class="card-text text-white bg-warning">NewsPapers.Com</p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 ">
+            <a asp-action="Index">
+                <div class="card bg-dark text-white mt-3">
+                    <img src="~/img/5c3bdea0349c9.image.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title text-white bg-danger">Tüm Haberler</h5>
+                        <p class="card-text text-white bg-warning">Haberleri Silme ve Güncelleme Sayfası</p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+

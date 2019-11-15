@@ -1,0 +1,127 @@
+﻿@model News
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section sections{
+
+    <script>
+
+        $(".checked").click(function () {
+
+            $(".activecheck").parent().toggleClass("d-inline")
+            $(".activecheck").parent().toggleClass("d-none")
+
+        })
+
+    </script>
+}
+
+<h2>Update</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-1 col-md-3 col-lg-2"></div>
+        <div class="col-10 col-md-6 col-lg-8">
+
+            <form asp-action="Update" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" name="NewsId" id="NewsId" value="@Model.NewsId" />
+                <input type="hidden" name="Image" id="Image" value="@Model.Image" />
+
+                <div>
+                    <label asp-for="NewsTitle" class="">Haber Başlığı</label>
+                    <input asp-for="NewsTitle" class="form-control" />
+                </div>
+                <div>
+                    <label asp-for="NewsAuthor">Haber Yazarı </label>
+                    <input asp-for="NewsAuthor" class="form-control">
+                </div>
+                <div>
+                    <label asp-for="NewsDescription">Haber Kısa Metni </label>
+                    <textarea asp-for="NewsDescription" class="form-control"></textarea>
+                </div>
+
+                <div>
+                    <label asp-for="Body">Haber İçeriği</label>
+                    <textarea asp-for="Body" class="form-control"></textarea>
+                </div>
+
+                <div>
+                    <img src="~/img/@Model.Image" width="120" alt="Alternate Text" />
+                    <input type="file" name="file" id="file" class="form-control" />
+                </div>
+                <div>
+                    <label asp-for="CategoryId">Category</label>
+                    <select class="form-control" asp-for="CategoryId" asp-items="ViewBag.Categories">
+                        <option disabled selected value="">Seçiniz</option>
+
+                    </select>
+                </div>
+                <div class="">
+                    <label asp-for="CategoryName">Tekrardan Kategori Seçiniz.</label>
+                    <select class="form-control" asp-for="CategoryName">
+                        <option disabled selected value="">Seçiniz</option>
+                        <option value="Spor">Spor</option>
+                        <option value="Teknoloji">Teknoloji</option>
+                        <option value="Tasarım-İnovasyon">Tasarım/Inovasyon</option>
+                        <option value="Kültür-Sanat">Kültür/Sanat</option>
+
+                    </select>
+                </div>
+
+                <div class="form-check mt-2">
+                    <label class="form-check-label">
+                        <input asp-for="IsApproved" class="form-check-input" />
+                        Onayla
+                    </label>
+
+                </div>
+
+                <div class="form-check mt-2 ">
+                    <label class="form-check-label">
+                        <input asp-for="IsSlide" class="form-check-input checked " />
+                        Slider'a Ekle
+                    </label>
+
+                </div>
+                @if (Model.IsSlide == true)
+                {
+                    <div>
+                        <label asp-for="SliderName">Hangi Slider'a eklensin?</label>
+                        <select class="form-control" asp-for="SliderName">
+                            <option disabled selected value="">Seçiniz</option>
+                            <option value="BuyukResim">Büyük Kutucuk</option>
+                            <option value="buton1">1. Kutucuk</option>
+                            <option value="buton2">2. Kutucuk</option>
+                            <option value="buton3">3. Kutucuk</option>
+                            <option value="buton4">4. Kutucuk</option>
+
+                        </select>
+                    </div>
+                }
+                else
+                {
+                    <div class="d-none">
+                        <label asp-for="SliderName" class="activecheck">Hangi Slider'a eklensin?</label>
+                        <select class="form-control" asp-for="SliderName" class="activecheck">
+                            <option disabled selected value="">Seçiniz</option>
+                            <option value="BuyukResim">Büyük Kutucuk</option>
+                            <option value="buton1">1. Kutucuk</option>
+                            <option value="buton2">2. Kutucuk</option>
+                            <option value="buton3">3. Kutucuk</option>
+                            <option value="buton4">4. Kutucuk</option>
+
+                        </select>
+                    </div>
+                }
+
+                <br />
+                <input type="submit" value="Uptade" class="text-right btn btn-warning mt-3" />
+            </form>
+
+        </div>
+        <div class="col-1 col-md-3 col-lg-2"></div>
+    </div>
+</div>
+

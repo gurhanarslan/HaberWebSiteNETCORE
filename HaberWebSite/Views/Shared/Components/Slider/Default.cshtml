@@ -1,0 +1,21 @@
+﻿@model IEnumerable<News>
+
+<div class="p-5">
+    <div class="login">
+        @foreach (var item in Model) { 
+
+        
+            <div class="@item.SliderName card bg-dark slider text-white">
+                <a asp-action="Details" asp-controller="Home" asp-route-title="@item.NewsTitle" class="text-white">
+                    <img src="~/img/@item.Image" class="card-img " alt="..." style="height: 100% !important">
+                    <div class="img-overlayalt slider">
+                        <h5 class="card-title">@item.NewsTitle</h5>
+
+                        <p class="card-text clock"> <strong class="mx-2"> @item.NewsTime</strong></p>
+                    </div>
+                </a>
+            </div>
+    
+        }
+    </div>
+</div>

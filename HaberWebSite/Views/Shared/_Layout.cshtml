@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/styleNews.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark">
+        <div class="container">
+            <div class="navbar-brand"><a asp-action="Index" asp-controller="Home" class="btn btn-primary"> NEWS-PAPERS </a></div>
+            <div class="navbar-toggler" data-toggle="collapse" role="button" data-target="#navbarmenu">
+                <div class="navbar-toggler-icon"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarmenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a href="/" class="mx-4  mt-2 btn btn-secondary">Ana Sayfa</a></li>
+                    <li class="nav-item"> <a asp-action="Spor" asp-controller="Home" class="mx-4 mt-2 btn btn-success" >Spor</a></li>
+                    <li class="nav-item"> <a asp-action="Teknoloji" asp-controller="Home" class="mx-4  mt-2 btn btn-primary">Teknoloji</a></li>
+                    <li class="nav-item"> <a asp-action="TasarimInovasyon" asp-controller="Home" class="mx-4  mt-2 btn btn-danger">Tasarım/Inovasyon</a></li>
+                    <li class="nav-item"> <a asp-action="KulturSanat" asp-controller="Home" class="mx-4  mt-2 btn btn-warning">Kültür/Sanat</a></li>
+                    <li class="nav-item"> <a asp-action="All" asp-controller="AdminNews" class="btn  btn-info mx-5  mt-2">ADMIN SAYFASI</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+
+    @RenderBody()
+
+    <footer id="footer" class="page-footer font-small unique-color-dark mt-5">
+
+        <div style="background-color: #c8a2c8">
+            <div class="container">
+
+
+                <div class="row py-4 d-flex align-items-center">
+
+
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0" style="color:#fff">Sosya Medya Hesaplarım</h6>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+
+
+                        <a target="_blank" href="https://twitter.com/gurhanarslann" class="fa fa-twitter"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/gurhanarslan" class="fa fa-linkedin"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container text-center text-md-left mt-5">
+
+
+            <div class="row mt-3">
+
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold black">Gürhan ARSLAN</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto btn-lila" style="width: 140px;">
+                    <p>
+                        Kendimi geliştirmek için yapmış olduğum web site tasarımlarını sergilediğim blog sayfasıdır.
+                        <a asp-action="About" asp-controller="Home" class="btn btn-warning mt-3">Daha fazlası için</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold black">Yeteneklerim</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto btn-lila" style="width: 120px;">
+                    <p>
+                        <a class="orange" href="#ability">HTML</a>
+                    </p>
+                    <p>
+                        <a class="orange" href="#ability">CSS GRID</a>
+                    </p>
+                    <p>
+                        <a class="orange" href="#ability">JQUERY.JS</a>
+                    </p>
+                    <p>
+                        <a class="orange" href="#ability">BOOTSTRAP</a>
+                    </p>
+
+                </div>
+
+
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+
+                    <h6 class="text-uppercase font-weight-bold black">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto btn-lila" style="width: 75px;">
+                    <p>
+                        <i class="home mr-3"></i> Izmir/Turkey
+                    </p>
+                    <p>
+                        <i class="mail mr-3"></i> gurhanarslanag@gmail.com
+                    </p>
+                    <p>
+                        <i class="linkedin mr-3"></i> <a href="https://www.linkedin.com/in/gurhanarslan">in/gurhanarslan</a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="footer-copyright text-center py-3 lila" id="footertext"></div>
+
+
+    </footer>
+
+
+
+    @RenderSection("sections", false)
+</body>
+
+</html>

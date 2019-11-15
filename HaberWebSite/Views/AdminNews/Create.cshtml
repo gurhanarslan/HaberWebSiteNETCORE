@@ -1,0 +1,61 @@
+﻿@model News
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="share container-fluid ">
+    <span class="header h3 bg-dark text-white px-4 pt-2">Güncel Haberler</span>
+    <div class="border-bottom" style="border-bottom: 4px solid #343a40 !important;"></div>
+    <div class="row mt-4">
+        <div class="col-12 col-md-4"></div>
+        <form asp-action="Create" method="post">
+            <div class="col-12">
+                <div class="form-group">
+                    <label asp-for="NewsTitle"> Haber Başlığı </label>
+                    <input class="form-control" asp-for="NewsTitle" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="NewsAuthor"> Haberi Yazan Kişi </label>
+                    <input class="form-control" asp-for="NewsAuthor" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="NewsDescription">Haber Kısa Metni </label>
+                    <input class="form-control" asp-for="NewsDescription" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Body"> Haber İçeriği </label>
+                    <input class="form-control" asp-for="Body" />
+                </div>
+
+                <div class="form-group">
+                    <label>Haber Resimi </label>
+                    <p> Haber resmini Update kısmında onaylandıktan sonra yükleyiniz.</p>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CategoryId">Category</label>
+                    <select class="form-control" asp-for="CategoryId" asp-items="ViewBag.Categories">
+                        <option disabled selected value="">Seçiniz</option>
+
+                    </select>
+                </div>
+                <div class="">
+                    <label asp-for="CategoryName">Tekrardan Kategori Seçiniz.</label>
+                    <select asp-for="CategoryName" class="form-control">
+                        <option disabled selected value="">Seçiniz</option>
+                        <option value="Spor">Spor</option>
+                        <option value="Teknoloji">Teknoloji</option>
+                        <option value="Tasarım-İnovasyon">Tasarım/Inovasyon</option>
+                        <option value="Kültür-Sanat">Kültür/Sanat</option>
+
+                    </select>
+                </div>
+
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </form>
+        <div class="col-12 col-md-4"></div>
+
+    </div>
+ </div> 

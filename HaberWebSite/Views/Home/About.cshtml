@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+
+<div class="container mt-5 text-justify">
+    <p>
+        Merhaba, <br>
+        İsmim Gürhan Arslan Eylül 1996 İzmir doğumluyum. 2014 yılında Isparta Süleyman Demirel Üniversitesi
+        Bilgisayar Mühendisliğini kazandım. Bir yıl hazırlık okuduktan sonra bölüme geçtim ve 2019 yılında bölümü
+        tamamladım.
+        Front-End alanında kendimi geliştiriyorum. Devamlı yeni tasarımlar üretmek amacındayım, bu blog sayfasını
+        açmaktaki amacım;
+        yapmış olduğum çalışmaları bir yerde toplamaktı. Özgün tasarımlar ve Hazır yapılmış web site tasarımlarını
+        sıfırdan yazmaya
+        çalışarak kendimi geliştiriyorum.
+    </p>
+    <div class="row">
+        <div class="col-3 text-right">
+
+        </div>
+        <div class="col-6">
+
+            <p class="mr-5 mt-3" id="nettext" style="   font-family: 'Righteous', cursive !important; font-size : 16px">
+                ASP.NET CORE
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id="net" role="progressbar"
+                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+            </div>
+
+
+            <p class="mr-5 mt-3 " id="htmltext" style="  font-family: 'Righteous', cursive !important; font-size : 16px">
+                HTML - 90%
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" id="html" role="progressbar"
+                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+
+            <p class="mr-5 mt-3" id="csstext" style="  font-family: 'Righteous', cursive !important; font-size : 16px">
+                CSS
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" id="css" role="progressbar"
+                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+
+
+
+
+            <p class="mr-5 mt-3" id="jquerytext" style="   font-family: 'Righteous', cursive !important; font-size : 16px">
+                JQUERY
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id="jquery" role="progressbar"
+                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+            </div>
+            <p class="mr-5 mt-3" id="bootstraptext"
+               style="  font-family: 'Righteous', cursive !important; font-size : 16px">BOOTSTRAP</p>
+            <div class="progress">
+                <div id="bootstrap" class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+</div>
+
+<script>
+    var html = 0;
+    var css = 0;
+    var jquery = 0;
+    var bootstrap = 0;
+    var net = 0;
+    function htmlx() {
+      if (html >= 95) {
+        clearInterval(htmlRemove);
+      } else {
+        html++;
+        $("#html").width(html + "%");
+        $("#htmltext").html("HTML - " + html + "%")
+      }
+    }
+
+    function netx() {
+        if (net >= 55) {
+            clearInterval(netRemove);
+        } else {
+            net++;
+            $("#net").width(html + "%");
+            $("#nettext").html(".NET CORE - " + net + "% - (Geliştirmeye Devam Ediyorum)")
+        }
+    }
+
+    function cssx() {
+      if (css >= 95) {
+        clearInterval(cssRemove);
+      } else {
+        css++;
+        $("#css").width(css + "%");
+        $("#csstext").html("CSS - " + css + "%")
+      }
+    }
+
+    function jqueryx() {
+      if (jquery >= 70) {
+        clearInterval(jqueryRemove);
+      } else {
+        jquery++;
+        $("#jquery").width(jquery + "%");
+        $("#jquerytext").html("JQUERY - " + jquery + "%")
+      }
+    }
+
+    function bootstrapx() {
+      if (bootstrap >= 100) {
+        clearInterval(bootstrapRemove);
+      } else {
+        bootstrap++;
+        $("#bootstrap").width(bootstrap + "%");
+        $("#bootstraptext").html("BOOTSTRAP - " + bootstrap + "%")
+      }
+    }
+
+
+    var htmlRemove = setInterval(htmlx, 95);
+    var cssRemove = setInterval(cssx, 95);
+    var jqueryRemove = setInterval(jqueryx, 95);
+    var bootstrapRemove = setInterval(bootstrapx, 95);
+    var netRemove = setInterval(netx, 95);
+</script>

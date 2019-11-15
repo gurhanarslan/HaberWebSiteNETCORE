@@ -1,0 +1,53 @@
+﻿@model IEnumerable<News>
+@{
+    ViewData["Title"] = "IsNotApproved";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid " id="ability">
+
+    <div class="row">
+
+
+        <div class="col-12 text-center mt-4">
+            <span class="header h3 bg-dark text-white px-4 pt-2">Onaylanmamış Haberler</span>
+            <div class="border-bottom" style="border-bottom: 4px solid #343a40 !important;"></div>
+        </div>
+
+        <div class="col-md-1">   </div>
+
+        @foreach (var item in Model)
+        {
+            <div class="col-12 col-md-2 mt-3">
+                <div class="card w-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@item.NewsTitle</h5>
+                        <p class="card-text text-center">
+                            @if (item.IsApproved==false)
+                            {
+                                <span class="badge badge-danger ">Onaylanmamış Haberler</span>
+                            }
+                            else
+                            {
+
+                            }
+                            <br />
+                            Kategori :<span class="badge badge-primary mx-2 mt-4">@item.CategoryName</span>
+                            <span class="badge badge-dark">@item.NewsTime</span>  Yazar : <span class="badge badge-info">@item.NewsAuthor</span>
+                        </p>
+                        <a asp-action="Details" asp-controller="Home" asp-route-title="@item.NewsTitle" class="mt-2 btn btn-warning">Haberi Görüntüle</a>
+                        <a asp-action="Update" asp-controller="AdminNews" asp-route-id="@item.NewsId" class="mt-2 btn btn-primary">Update</a>
+                        <form asp-action="Delete" method="post">
+
+                            <button asp-action="Delete" asp-route-id="@item.NewsId" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        }
+        <div class="col-md-1">   </div>
+        <hr />
+    </div>
+</div>
