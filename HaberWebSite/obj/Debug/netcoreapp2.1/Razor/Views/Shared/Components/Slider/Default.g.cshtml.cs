@@ -89,12 +89,12 @@ WriteAttributeValue("", 149, item.SliderName, 149, 16, false);
             WriteLiteral(">\r\n                ");
             EndContext();
             BeginContext(216, 491, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31d4e108a778499da23185b9dbf8325c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55aac78e8f244b5b95253d4225ccb96a", async() => {
                 BeginContext(315, 22, true);
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(337, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3aa567952e7d428c840a8365e729f82c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d9eb71ee814344c8ba1c220d6d611de6", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

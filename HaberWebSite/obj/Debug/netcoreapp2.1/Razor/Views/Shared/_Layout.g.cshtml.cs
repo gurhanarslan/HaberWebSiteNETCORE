@@ -79,7 +79,7 @@ using HaberWebSite.Models.EfCore;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n");
             EndContext();
             BeginContext(37, 975, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08dcd6a593524d979d338cf3135eea9f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c1c217e98be0416e84afb89ab868583e", async() => {
                 BeginContext(43, 582, true);
                 WriteLiteral(@"
     <meta charset=""UTF-8"">
@@ -93,7 +93,7 @@ using HaberWebSite.Models.EfCore;
     ");
                 EndContext();
                 BeginContext(625, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "6ef8607ad1844ecc8b1ac48f55d8a013", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7c2936a7760a4d4b8747e95957f16bad", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -132,12 +132,12 @@ using HaberWebSite.Models.EfCore;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(1016, 4806, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9c664693d664e32a5d187ad53515c56", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76efb53a45ea4f06a7cf28641070005b", async() => {
                 BeginContext(1022, 147, true);
                 WriteLiteral("\r\n    <nav class=\"navbar navbar-expand-md bg-dark sticky-top navbar-dark\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-brand\">");
                 EndContext();
                 BeginContext(1169, 85, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ad9a0753209442fa99dc13529cdcbc8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a21316356114aa6b8489c2dd79f7519", async() => {
                     BeginContext(1237, 13, true);
                     WriteLiteral(" NEWS-PAPERS ");
                     EndContext();
@@ -169,7 +169,7 @@ using HaberWebSite.Models.EfCore;
                     <li class=""nav-item""> ");
                 EndContext();
                 BeginContext(1714, 86, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55bed8dae390400883a42f3e9fdf0e62", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19c5ccf2f2144fe4bcde4f48316e6559", async() => {
                     BeginContext(1792, 4, true);
                     WriteLiteral("Spor");
                     EndContext();
@@ -194,7 +194,7 @@ using HaberWebSite.Models.EfCore;
                 WriteLiteral("</li>\r\n                    <li class=\"nav-item\"> ");
                 EndContext();
                 BeginContext(1849, 96, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a5a370c661444ae99b00a0980c1b278", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63e5467b01f9445bb63cfa07135f3b7e", async() => {
                     BeginContext(1932, 9, true);
                     WriteLiteral("Teknoloji");
                     EndContext();
@@ -219,7 +219,7 @@ using HaberWebSite.Models.EfCore;
                 WriteLiteral("</li>\r\n                    <li class=\"nav-item\"> ");
                 EndContext();
                 BeginContext(1994, 110, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3acb42e1f8c245e2b0ba52c499e75647", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64993164c02f4863bec345c4656c6207", async() => {
                     BeginContext(2083, 17, true);
                     WriteLiteral("Tasarım/Inovasyon");
                     EndContext();
@@ -244,7 +244,7 @@ using HaberWebSite.Models.EfCore;
                 WriteLiteral("</li>\r\n                    <li class=\"nav-item\"> ");
                 EndContext();
                 BeginContext(2153, 101, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e6b2dd01e5442eebfbbe1f2895ccc07", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26bfcc9ce1d143a0a9c21e74f973e192", async() => {
                     BeginContext(2238, 12, true);
                     WriteLiteral("Kültür/Sanat");
                     EndContext();
@@ -269,7 +269,7 @@ using HaberWebSite.Models.EfCore;
                 WriteLiteral("</li>\r\n                    <li class=\"nav-item\"> ");
                 EndContext();
                 BeginContext(2303, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9623ba1ce0234c63860a0296c66fb97a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bfdfb34eecf64151a991066fba47cffd", async() => {
                     BeginContext(2383, 13, true);
                     WriteLiteral("ADMIN SAYFASI");
                     EndContext();
@@ -347,7 +347,7 @@ Write(RenderBody());
                         ");
                 EndContext();
                 BeginContext(3936, 94, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4020de550694a7696aa198cf6cbcd59", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b52ff0bb18f4f3c9f13a7a8beb065f4", async() => {
                     BeginContext(4009, 17, true);
                     WriteLiteral("Daha fazlası için");
                     EndContext();

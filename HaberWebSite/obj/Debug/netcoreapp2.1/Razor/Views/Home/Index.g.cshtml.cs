@@ -110,12 +110,12 @@ Write(await Component.InvokeAsync("Slider"));
             WriteLiteral("                    ");
             EndContext();
             BeginContext(582, 2858, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "922ba0c1325042a981d4687ec32eb021", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ce53dd092724cef8398739bd2e8181b", async() => {
                 BeginContext(662, 198, true);
                 WriteLiteral("\r\n                        \r\n                        <div class=\"col-12 col-md-6 col-lg-4 mt-3\">\r\n                            <div class=\"card\" style=\"width: 100%;\">\r\n                                ");
                 EndContext();
                 BeginContext(860, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "46f834c49b8743c394d8a5177722c6ad", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a06a68f9ffec452d8e66e286d47f503a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -151,7 +151,7 @@ AddHtmlAttributeValue("", 876, item.Image, 876, 11, false);
                 WriteLiteral("                                                ");
                 EndContext();
                 BeginContext(1288, 152, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "57b8530de28f4bfaa1472e2885aabd9d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "493048b5cb654ec1ac04f1d0bb1a2ad8", async() => {
                     BeginContext(1377, 34, true);
                     WriteLiteral("<span class=\"badge badge-warning\">");
                     EndContext();
@@ -197,7 +197,7 @@ AddHtmlAttributeValue("", 876, item.Image, 876, 11, false);
                 WriteLiteral("                                                ");
                 EndContext();
                 BeginContext(1680, 156, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5dfaf0710dca49eeb73d98580ceddc9f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f95bb32449a4809b8fdb193e8816c6b", async() => {
                     BeginContext(1774, 33, true);
                     WriteLiteral("<span class=\"badge badge-danger\">");
                     EndContext();
@@ -243,7 +243,7 @@ AddHtmlAttributeValue("", 876, item.Image, 876, 11, false);
                 WriteLiteral("                                                ");
                 EndContext();
                 BeginContext(2063, 145, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "543e166b7d1f4f12bd6f62e8d803c713", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "493f2752a22642868b5365fcba8d42f4", async() => {
                     BeginContext(2145, 34, true);
                     WriteLiteral("<span class=\"badge badge-success\">");
                     EndContext();
@@ -289,7 +289,7 @@ AddHtmlAttributeValue("", 876, item.Image, 876, 11, false);
                 WriteLiteral("                                                ");
                 EndContext();
                 BeginContext(2402, 150, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9bac00eda6e47d3bb9f8020c33633a1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0340c1901e8146e7b2f9f2df907347d6", async() => {
                     BeginContext(2489, 34, true);
                     WriteLiteral("<span class=\"badge badge-primary\">");
                     EndContext();

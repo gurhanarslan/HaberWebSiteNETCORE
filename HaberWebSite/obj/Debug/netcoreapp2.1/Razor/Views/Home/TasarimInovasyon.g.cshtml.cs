@@ -90,7 +90,7 @@ using HaberWebSite.Models.EfCore;
             WriteLiteral("                    <div class=\"col-12 col-md-6 col-lg-4 mt-3\">\r\n                        <div class=\"card\" style=\"width: 100%;\">\r\n                            ");
             EndContext();
             BeginContext(693, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "213c621d1b6048b083d7d946eb61a836", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5ad30f6acb5941c58ee0a08c47546a91", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

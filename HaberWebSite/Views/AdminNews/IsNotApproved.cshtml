@@ -4,6 +4,13 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+
+@if (Model.Count() == 0)
+{
+<div class="text-center"> Herhangi bir onaylanmamış Haber Yoktur! <br /> <a asp-action="Create" asp-controller="AdminNews">Yeni Bir Haber Oluştur.</a></div>
+}
+
+
 <div class="container-fluid " id="ability">
 
     <div class="row">

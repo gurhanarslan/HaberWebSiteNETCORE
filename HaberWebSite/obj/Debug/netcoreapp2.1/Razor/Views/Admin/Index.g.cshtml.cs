@@ -142,12 +142,12 @@ using HaberWebSite.Models.EfCore;
             WriteLiteral("</td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(725, 298, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a30eaf7811934a8395f1121fad1cb644", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a733596dc38045749419c3e4f0aae910", async() => {
                 BeginContext(765, 28, true);
                 WriteLiteral("\r\n\r\n                        ");
                 EndContext();
                 BeginContext(793, 90, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e070e8951e66483fb9be600e2ea5e94d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2cb0851557f648d28598479971785a4a", async() => {
                     BeginContext(868, 6, true);
                     WriteLiteral("Delete");
                     EndContext();
@@ -183,7 +183,7 @@ using HaberWebSite.Models.EfCore;
                 WriteLiteral("\r\n                        ");
                 EndContext();
                 BeginContext(909, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5cbacd30d2b40a1821deb624cdbfc52", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "679b2966f96740ad8d64debc68b0d64d", async() => {
                     BeginContext(980, 6, true);
                     WriteLiteral("Update");
                     EndContext();
@@ -255,7 +255,7 @@ using HaberWebSite.Models.EfCore;
             WriteLiteral("\r\n</table>\r\n\r\n");
             EndContext();
             BeginContext(1107, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b8ed903c2df41b8b988b7c74b27ee47", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e03af6fb9482401a9d4bd08fa9e1e3fe", async() => {
                 BeginContext(1154, 12, true);
                 WriteLiteral("Create Users");
                 EndContext();

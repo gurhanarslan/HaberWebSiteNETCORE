@@ -1,4 +1,5 @@
 ﻿@model News
+
 @{
     ViewData["Title"] = "Details";
 }
@@ -7,7 +8,7 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col-12 col-md-12 mt-5">
-           
+
             <h1>@Model.NewsTitle</h1>
         </div>
         <div class="col-12 col-md-9 mt-3"><img src="~/img/@Model.Image" style="width: 100%;" alt=""></div>
@@ -25,10 +26,33 @@
         </div>
         <div class="col-12 mt-5">
             <p>
-               @Model.Body
+                @Model.Body
             </p>
         </div>
 
     </div>
 
+
 </div>
+
+@if (Model.CategoryName == "Spor")
+{
+    @await Component.InvokeAsync("SameNewsSpor")
+}
+else if (Model.CategoryName == "Teknoloji")
+{
+    @await Component.InvokeAsync("SameNewsTeknoloji")
+}
+else if (Model.CategoryName == "Kültür-Sanat")
+{
+    @await Component.InvokeAsync("SameNewsKS")
+}
+else if (Model.CategoryName == "Tasarım-İnovasyon")
+{
+    @await Component.InvokeAsync("SameNewsTI")
+}
+else
+{
+
+}
+

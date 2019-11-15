@@ -50,3 +50,7 @@ C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\R
 C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
 C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\Razor\Views\AdminNews\All.g.cshtml.cs
 C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\Razor\Views\AdminNews\IsNotApproved.g.cshtml.cs
+C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SameNewsSpor\Default.g.cshtml.cs
+C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SameNewsTeknoloji\Default.g.cshtml.cs
+C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SameNewsTI\Default.g.cshtml.cs
+C:\Users\gurhan\source\repos\HaberWebSite\HaberWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SameNewsKS\Default.g.cshtml.cs

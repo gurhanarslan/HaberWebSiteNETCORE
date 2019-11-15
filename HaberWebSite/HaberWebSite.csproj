@@ -27,6 +27,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\Shared\Components\SameNewsTeknoloji\Default.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Components\SameNewsTI\Default.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Components\SameNewsKS\Default.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Shared\_LayoutAdmin.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
